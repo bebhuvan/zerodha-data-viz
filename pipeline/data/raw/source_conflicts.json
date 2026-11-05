@@ -1,0 +1,202 @@
+[
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "Housing",
+   "Housing-Overall",
+   2013,
+   "January"
+  ],
+  "values": [
+   [
+    "100.3",
+    null
+   ],
+   [
+    "106.0",
+    "10.76"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "General",
+   "General-Overall",
+   2013,
+   "January"
+  ],
+  "values": [
+   [
+    "104.6",
+    null
+   ],
+   [
+    "105.1",
+    "10.52"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "Housing",
+   "Housing-Overall",
+   2013,
+   "February"
+  ],
+  "values": [
+   [
+    "100.4",
+    null
+   ],
+   [
+    "106.2",
+    "10.17"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "General",
+   "General-Overall",
+   2013,
+   "February"
+  ],
+  "values": [
+   [
+    "105.3",
+    null
+   ],
+   [
+    "105.9",
+    "10.89"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "Housing",
+   "Housing-Overall",
+   2013,
+   "March"
+  ],
+  "values": [
+   [
+    "100.4",
+    null
+   ],
+   [
+    "106.2",
+    "9.26"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "General",
+   "General-Overall",
+   2013,
+   "March"
+  ],
+  "values": [
+   [
+    "105.5",
+    null
+   ],
+   [
+    "106.1",
+    "10.06"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "Housing",
+   "Housing-Overall",
+   2013,
+   "April"
+  ],
+  "values": [
+   [
+    "100.5",
+    null
+   ],
+   [
+    "106.3",
+    "8.25"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "General",
+   "General-Overall",
+   2013,
+   "April"
+  ],
+  "values": [
+   [
+    "106.1",
+    null
+   ],
+   [
+    "106.7",
+    "9.10"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "Housing",
+   "Housing-Overall",
+   2013,
+   "May"
+  ],
+  "values": [
+   [
+    "100.5",
+    null
+   ],
+   [
+    "106.7",
+    "7.45"
+   ]
+  ]
+ },
+ {
+  "key": [
+   "All India",
+   "Combined",
+   "General",
+   "General-Overall",
+   2013,
+   "May"
+  ],
+  "values": [
+   [
+    "106.9",
+    null
+   ],
+   [
+    "107.5",
+    "9.03"
+   ]
+  ]
+ }
+]

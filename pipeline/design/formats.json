@@ -1,0 +1,253 @@
+{
+  "_note": "Output formats. sizes = headline / body / small text in px for that canvas, chosen so text reads at the size the platform actually displays the image (a 1600px X image shows at roughly the same width on a phone as a 1080px Instagram post, so it needs ~1.33x the type). Brand rule: two core sizes, small = body minus at most 4px. safe = extra top/bottom space platforms cover with UI (added to the theme's equal margin). crops = centred preview crops a platform applies (lint 'crop'). space = per-format overrides of the theme's rules.space, each with a reason. Sources for every size: platform-sizes.md. layout: stack (header above chart) or side (header column left, chart right); side_col = header column share of the width (default 0.36). notes: false means a stacked canvas is too short to carry notes, so they go only into the caption file; side (landscape) layouts ignore it and set notes in the header column when the space between dek and source holds them.",
+  "formats": {
+    "instagram_portrait": {
+      "width": 1080,
+      "height": 1350,
+      "scale": 1,
+      "sizes": [
+        40,
+        24,
+        20
+      ],
+      "layout": "stack",
+      "notes": true,
+      "used_for": [
+        "Instagram feed and carousel (4:5)",
+        "Threads",
+        "X single image",
+        "LinkedIn image and document posts",
+        "WhatsApp chat"
+      ],
+      "crops": [
+        {
+          "name": "Instagram profile grid (3:4)",
+          "aspect": 0.75
+        }
+      ],
+      "space": {
+        "chart_area_min": 0.52,
+        "_why": "3-line headline + 3-line dek + notes leave ~60% height; 0.52 of area at 88% width"
+      }
+    },
+    "square": {
+      "width": 1080,
+      "height": 1080,
+      "scale": 1,
+      "sizes": [
+        40,
+        24,
+        20
+      ],
+      "layout": "stack",
+      "notes": true,
+      "used_for": [
+        "YouTube community posts (1:1, per YouTube Help)",
+        "Instagram square",
+        "LinkedIn square"
+      ],
+      "max_lines": {
+        "dek": 2
+      },
+      "space": {
+        "chart_area_min": 0.45,
+        "_why": "header up to a third + footer + margins leave ~52% height at 88% width"
+      }
+    },
+    "story": {
+      "width": 1080,
+      "height": 1920,
+      "scale": 1,
+      "sizes": [
+        40,
+        24,
+        20
+      ],
+      "layout": "stack",
+      "notes": true,
+      "safe": {
+        "top": 250,
+        "bottom": 250,
+        "_why": "Meta's guidance for Stories: keep about 250px at the top and bottom free of text (profile row, reply bar). Was 270/340."
+      },
+      "used_for": [
+        "Instagram and Facebook stories",
+        "Reels / Shorts cover",
+        "WhatsApp status"
+      ],
+      "crops": [
+        {
+          "name": "Reels cover in profile grid (3:4)",
+          "aspect": 0.75
+        }
+      ],
+      "space": {
+        "chart_area_min": 0.46,
+        "_why": "share of the usable area after safe zones (68% of the canvas); the narrow measure runs copy to more lines"
+      },
+      "max_lines": {
+        "headline": 2
+      }
+    },
+    "x_landscape": {
+      "width": 1600,
+      "height": 900,
+      "scale": 1,
+      "sizes": [
+        48,
+        32,
+        28
+      ],
+      "layout": "side",
+      "side_col": 0.3,
+      "notes": false,
+      "used_for": [
+        "X single image, wide charts (16:9)"
+      ],
+      "space": {
+        "chart_area_min": 0.5,
+        "_why": "16:9 and 1.91:1 canvases with a stacked header: a 2-line headline and 2-line dek take about a third of the height, leaving about 55% of the area at 95% width"
+      }
+    },
+    "linkedin_landscape": {
+      "width": 1200,
+      "height": 627,
+      "scale": 2,
+      "sizes": [
+        32,
+        24,
+        20
+      ],
+      "layout": "side",
+      "side_col": 0.3,
+      "notes": false,
+      "used_for": [
+        "LinkedIn link-share image (1.91:1)"
+      ],
+      "space": {
+        "chart_area_min": 0.5,
+        "_why": "16:9 and 1.91:1 canvases with a stacked header: a 2-line headline and 2-line dek take about a third of the height, leaving about 55% of the area at 95% width"
+      }
+    },
+    "youtube": {
+      "width": 1920,
+      "height": 1080,
+      "scale": 1,
+      "sizes": [
+        56,
+        32,
+        28
+      ],
+      "layout": "side",
+      "side_col": 0.3,
+      "notes": false,
+      "used_for": [
+        "YouTube video frame / slide (16:9)",
+        "Presentations"
+      ],
+      "space": {
+        "chart_area_min": 0.5,
+        "_why": "16:9 and 1.91:1 canvases with a stacked header: a 2-line headline and 2-line dek take about a third of the height, leaving about 55% of the area at 95% width"
+      }
+    },
+    "blog": {
+      "width": 1456,
+      "height": 1456,
+      "scale": 1,
+      "sizes": [
+        56,
+        32,
+        28
+      ],
+      "layout": "stack",
+      "notes": false,
+      "used_for": [
+        "Substack / blog inline square (shows at ~728px)"
+      ],
+      "space": {
+        "chart_area_min": 0.52,
+        "_why": "square, but no notes on canvas"
+      }
+    },
+    "blog_wide": {
+      "width": 1456,
+      "height": 1048,
+      "scale": 1,
+      "sizes": [
+        56,
+        32,
+        28
+      ],
+      "layout": "stack",
+      "notes": true,
+      "used_for": [
+        "Substack / blog inline wide (14:10)",
+        "Substack post social preview"
+      ],
+      "max_lines": {
+        "headline": 2,
+        "dek": 2
+      },
+      "space": {
+        "chart_area_min": 0.42,
+        "_why": "14:10: a 2-line headline and 2-line dek take a quarter of the height; 0.42 is what remains at 88% width"
+      }
+    },
+    "web": {
+      "width": 760,
+      "height": 720,
+      "scale": 2,
+      "sizes": [
+        24,
+        16,
+        14
+      ],
+      "layout": "stack",
+      "notes": true,
+      "used_for": [
+        "Web pages at 1:1 CSS pixels; SVG scales responsively via viewBox"
+      ],
+      "max_lines": {
+        "dek": 2
+      },
+      "space": {
+        "chart_area_min": 0.45,
+        "_why": "same proportions as square"
+      }
+    }
+  },
+  "_note_sizes": "Type scale (3 Nov 2026, owner found the proportions off): headline and body on the guide's 8-point scale, small text body minus 4 (the guide's allowance; web minus 2). Headline about 1.5-1.75x body, as the guide asks for headings 'noticeably larger ... but not so large that they overpower' and progressions 'not abrupt'; the old 48/24 pair was 2x, and 28px body sat off the 8-point scale. A story shows at the same width on a phone as a feed post, so it takes the feed scale (40/24/20); 56/32/28 cost dense charts their legibility (3 Nov 2026).",
+  "platforms": {
+    "_note": "What a default run produces (3 Nov 2026). Each platform names the canvas it uses; output files are output/<theme>/<chart>/<chart>_<platform>_<W>x<H>.png. Several platforms may share one canvas (rendered once, copied). Formats no platform uses (linkedin_landscape, youtube, web, blog) render only with --format=all. Platform canvases render at 1x, so each PNG is exactly the size in its name: Instagram keeps at most 1080px wide and resizes anything larger, and 1600x900 already exceeds a phone's width on X.",
+    "instagram-feed": {
+      "format": "instagram_portrait",
+      "label": "Instagram feed and carousel (4:5)",
+      "why": "4:5 is the tallest feed size every account can post; the 3:4 profile grid crop is linted (crops)."
+    },
+    "instagram-story": {
+      "format": "story",
+      "label": "Instagram story (9:16)",
+      "why": "Full screen; 250px safe zones top and bottom for Instagram's interface."
+    },
+    "youtube-community": {
+      "format": "square",
+      "label": "YouTube Community post (1:1)",
+      "why": "YouTube recommends square images for Community posts; square fills the mobile feed."
+    },
+    "x": {
+      "format": "x_landscape",
+      "label": "X / Twitter post (16:9)",
+      "why": "16:9 at 1600x900 shows uncropped in the timeline on desktop and mobile."
+    },
+    "substack-notes": {
+      "format": "instagram_portrait",
+      "label": "Substack Notes (4:5)",
+      "why": "Substack publishes no Notes spec; Notes are read on phones, so the 4:5 feed image is the default. Check one real Note before relying on it."
+    },
+    "blog": {
+      "format": "blog_wide",
+      "label": "Blog and Substack posts (1456 wide)",
+      "why": "Substack's recommended width and post-preview size (1456x1048); reads well in a post body."
+    }
+  }
+}

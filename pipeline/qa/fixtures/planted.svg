@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#F6F1E9"/>
+<text x="100" y="200" font-family="'Libre Franklin'" font-size="21">Below −2%</text>
+<text x="196" y="200" font-family="'Libre Franklin'" font-size="21">−2 to 0</text>
+<text x="900" y="400" font-family="'Libre Franklin'" font-size="23" font-weight="700">Personal care +1.16</text>
+<text x="100" y="600" font-family="'Libre Franklin'" font-size="14">tiny 1.33%</text>
+<text x="100" y="800" font-family="'Libre Franklin'" font-size="23">Lakshadweep 7.0%</text>
+<path d="M120,792L500,800" stroke="#1E1B16" stroke-width="1.2" fill="none"/>
+<text x="100" y="1000" font-family="'Libre Franklin'" font-size="23">Kerala 9.99%</text>
+<text x="100" y="1100" font-family="'Libre Franklin'" font-size="23">Clean label 2.16°C</text>
+<rect x="300" y="1150" width="60" height="100" fill="#C2492F"/>
+<text x="270" y="1200" font-family="'Libre Franklin'" font-size="23">Over a bar edge</text>
+<rect x="600" y="1150" width="200" height="100" fill="#E4DED3"/>
+<text x="620" y="1210" font-family="'Libre Franklin'" font-size="21" fill="#FFFFFF">LD 7.0%</text>
+</svg>

@@ -1,0 +1,393 @@
+{
+  "_note": "Zerodha design guide (Brand guidelines.pdf, 2025). Every value traces to the guide; deviations are listed in _deviations. Palettes validated with the dataviz validator on #FFFFFF.",
+  "_deviations": [
+    "Acronyms of six or more letters listed in brand.acronyms (EBITDA) are allowed: they are the standard names of measures, not all-caps styling, which stays banned (owner decision, 5 Nov 2026).",
+    "Sunshine yellow #FFA412 -> #F59A0C as a data colour: #FFA412 fails the lightness band for marks (guide permits adjustments for accessibility). #FFA412 stays the brand colour elsewhere.",
+    "Map ramp's darkest warm step #C24E1C is a shade of #F07339, needed so the top bin reads as distinct (accessibility clause). All other ramp steps are brand colours or tints.",
+    "Label and micro-text colours #9B9B9B/#CCCCCC/#888888 fail WCAG 4.5:1 at 20px on white, so small text uses #666666 (approved body colour). Light greys are used only for lines and fills.",
+    "Axis labels, notes and source are body minus 4px: the guide's ±4px adjustment for smaller text. Core sizes (headline, body) stay on the guide's 8-point scale, e.g. 40 and 24 on 1080px feed canvases.",
+    "Tracking: Inter at our sizes is set with slight negative letter-spacing (-0.015em headline, -0.006em elsewhere), eased from Inter's dynamic-metrics values after the owner found the tighter setting looked clamped. The guide is silent on tracking; this is typesetting, not stylisation.",
+    "Map/tile ramp's strongest cool step is #2A64A9 (the guide's own blue shadow colour) instead of #387ED1: white labels on #387ED1 reach only 4.1:1, short of 4.5:1 for small text (accessibility clause). #387ED1 remains the series blue.",
+    "Side (landscape) layouts give the header column 30% of the width; for fixed-shape charts (maps, tile grids) that cannot use the extra width, the frame widens the header column up to 45% rather than leave an empty band.",
+    "Filled cells and bars that carry white text (rank grids, tiles) use #2A64A9, the guide's blue shadow colour, as the series blue: white on #387ED1 is 4.1:1, short of 4.5:1 for small text. Lines and unlabelled marks keep #387ED1. Token: color.accent_fill."
+  ],
+  "name": "zerodha",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "scale": 2
+  },
+  "margin": {
+    "_note": "Equal outer margin on every side, 4.5% of the canvas's short side (was 6%; the owner found 6% wasted canvas on 3 Nov 2026); platform safe zones add to it.",
+    "ratio": 0.045
+  },
+  "fonts": [
+    {
+      "family": "Inter",
+      "weight": 400,
+      "file": "inter/Inter-400.ttf"
+    },
+    {
+      "family": "Inter",
+      "weight": 600,
+      "file": "inter/Inter-600.ttf"
+    }
+  ],
+  "color": {
+    "surface": "#FFFFFF",
+    "ink": "#222222",
+    "ink2": "#666666",
+    "muted": "#666666",
+    "label": "#424242",
+    "grid": "#EDEDED",
+    "axis": "#9B9B9B",
+    "accent": "#387ED1",
+    "text_accent": "#222222",
+    "leader": "#424242",
+    "categorical": [
+      "#387ED1",
+      "#F59A0C",
+      "#A984FF",
+      "#4CAF52"
+    ],
+    "other": "#DDDDDD",
+    "nodata": "#FFFFFF",
+    "diverging_cool": [
+      "#2A64A9",
+      "#8DB4E6"
+    ],
+    "diverging_warm": [
+      "#F5A47E",
+      "#F07339",
+      "#C24E1C"
+    ],
+    "ridge_shade": "#FBD5C3",
+    "ridge_highlight": "#F07339",
+    "neutral": "#E7E7E7",
+    "nodata_stroke": "#9B9B9B",
+    "line_bg": "#DDDDDD",
+    "line_mid": "#9B9B9B",
+    "line_hero": "#F07339",
+    "ridge_line": "#C8C8C8",
+    "band": "#F3F3F3",
+    "_note": "Colour tokens. Chart marks use only grammar.ink greys or series colours (lint 'grammar'); other, nodata_stroke and axis are aliases kept for older chart code and equal grammar inks.",
+    "accent_fill": "#2A64A9"
+  },
+  "font": {
+    "serif": "Inter",
+    "sans": "Inter"
+  },
+  "type": {
+    "_note": "Type roles (the grammar). step picks the format's headline/body/small size; colour is fixed per role. White (#FFFFFF) may replace a role's colour only on a dark fill. Chart text (inside g.chart) is set with tabular figures; header and footer prose keeps proportional figures. Lint 'grammar' checks every text matches a role.",
+    "headline": {
+      "family": "sans",
+      "step": "headline",
+      "size": 48,
+      "weight": 600,
+      "color": "#222222",
+      "leading": 1.14,
+      "tracking": -0.015
+    },
+    "dek": {
+      "family": "sans",
+      "step": "body",
+      "size": 24,
+      "weight": 400,
+      "color": "#424242",
+      "leading": 1.4,
+      "tracking": -0.006
+    },
+    "label_strong": {
+      "family": "sans",
+      "step": "body",
+      "size": 24,
+      "weight": 600,
+      "color": "#222222"
+    },
+    "label": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 400,
+      "color": "#666666"
+    },
+    "label_on_fill": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 600,
+      "color": "#222222",
+      "_why": "Labels inside a filled mark (tiles): semibold so white text on a series colour passes contrast as large text."
+    },
+    "value": {
+      "family": "sans",
+      "step": "body",
+      "size": 24,
+      "weight": 600,
+      "color": "#222222",
+      "tabular": true
+    },
+    "axis": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 400,
+      "color": "#666666",
+      "tabular": true
+    },
+    "annotation": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 400,
+      "color": "#424242",
+      "leading": 1.35
+    },
+    "note": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 400,
+      "color": "#666666",
+      "leading": 1.35
+    },
+    "source": {
+      "family": "sans",
+      "step": "small",
+      "size": 20,
+      "weight": 400,
+      "color": "#666666",
+      "leading": 1.35
+    },
+    "kicker": null,
+    "brand": {
+      "family": "sans",
+      "step": "body",
+      "size": 24,
+      "weight": 600,
+      "color": "#222222"
+    }
+  },
+  "logo": {
+    "file": "brand/zerodha-logo.svg",
+    "height": 20,
+    "gap_units": 41,
+    "viewbox_height": 80
+  },
+  "leader_dash": "6 5",
+  "rules": {
+    "min_font_px": 20,
+    "stroke_line": 3,
+    "stroke_grid": 1.5,
+    "bar_gap_px": 2,
+    "brand": {
+      "fonts": [
+        "Inter"
+      ],
+      "text_colors": [
+        "#222222",
+        "#424242",
+        "#666666",
+        "#888888",
+        "#FFFFFF"
+      ],
+      "max_sizes": 2,
+      "max_weights": 2,
+      "no_all_caps": true,
+      "acronyms": ["EBITDA"],
+      "logo_required": true,
+      "size_step_tolerance": 4
+    },
+    "space": {
+      "_note": "Use-of-space targets checked by lint 'space'. Shares are of the whole canvas; safe zones are excluded. Formats may override in formats.json 'space'. band_max_lines 1.25: the header-to-chart and chart-to-footer breaks must read as breaks; one dek line is the floor, a quarter more is the ceiling.",
+      "stack_chart_area_min": 0.55,
+      "side_chart_width_min": 0.6,
+      "stack_header_max": 0.34,
+      "margin_min": 0.035,
+      "margin_max": 0.065,
+      "margin_tolerance": 0.02,
+      "band_max_lines": 1.25,
+      "gutter_min": 0.04,
+      "fixed_aspect_fill_min": 0.9,
+      "bar_fill_min": 0.4,
+      "swarm_cross_min": 0.45
+    },
+    "safe_inset_ratio": 0.035,
+    "style": {
+      "_note": "House style checks (lint 'style'). extra_strokes: weights at k=1 allowed besides theme.marks (white rings round dots, white outlines between map regions).",
+      "max_hues": 3,
+      "extra_strokes": [
+        2,
+        1.5
+      ]
+    }
+  },
+  "brand": "Zerodha",
+  "hatch_nodata": false,
+  "header": {
+    "topper": {
+      "color": "accent",
+      "width": 48,
+      "height": 6
+    },
+    "gaps": {
+      "_note": "Header/footer gaps are grammar.gaps step names.",
+      "topper": "l",
+      "headline": "l",
+      "dek": "l",
+      "legend": "xl",
+      "foot": "xl"
+    },
+    "max_lines": {
+      "stack": {
+        "headline": 3,
+        "dek": 3,
+        "notes": 2
+      },
+      "side": {
+        "headline": 3,
+        "dek": 5,
+        "notes": 8
+      }
+    },
+    "_note": "max_lines: the frame picks the first copy variant that fits; none fitting is a COPY error, never smaller type. Side layouts: headline at most 3 lines; notes go in the header column when they fit the space left between dek and source (the column has no dead gap).",
+    "stack_on_wide_max": 0.3,
+    "_note_stack_on_wide": "Landscape (side) formats use a stacked header when it takes at most this share of the height inside the margins; fixed-shape charts keep the side column.",
+    "explain_min_plot": 0.5,
+    "_headline_why": "Headlines are never narrowed (no balance, no widow narrowing): the owner read narrowed first lines as clamped on 28 Oct, 3 Nov and 4 Nov. Lint 'headline' flags a line that the next word would have fitted on, and one-word last lines; widows are fixed with copy variants."
+  },
+  "tracking_default": -0.006,
+  "marks": {
+    "_note": "Stroke widths and dot radius in px at k=1. Every data stroke uses one of these (lint 'style').",
+    "hero": 3.5,
+    "compare": 2,
+    "context": 1,
+    "grid": 1,
+    "baseline": 1.5,
+    "leader": 1,
+    "halo": 3,
+    "dot": 5
+  },
+  "grammar": {
+    "_note": "The visual grammar. Every chart reads its ink, spacing and mark geometry from here (kit.js K.ink, K.sp, K.mk); CLAUDE.md 'Visual grammar' has the rules in words. Pixel values are at k=1 (body 24px).",
+    "ink": {
+      "_note": "How dark each kind of mark is, loudest first. Only hero marks carry hue; one thing per chart is loud.",
+      "hero": "series colour (categorical.*, line_hero)",
+      "compare": "#9B9B9B",
+      "total": "#E3E3E3",
+      "context": "#DDDDDD",
+      "context_fill": "#E8E8E8",
+      "reference": "#9B9B9B",
+      "baseline": "#424242",
+      "leader": "#424242",
+      "grid": "#EDEDED",
+      "band": "#F3F3F3"
+    },
+    "space": {
+      "_note": "Spacing steps at k=1. Every gap in frame, kit and templates is one of these (lint_code checks the source). Names say the size, not the use.",
+      "2xs": 2,
+      "xs": 4,
+      "s": 8,
+      "m": 12,
+      "l": 16,
+      "xl": 24,
+      "2xl": 32,
+      "3xl": 48
+    },
+    "gaps": {
+      "_note": "Which step each recurring gap in the chart uses. Header and footer gaps (topper, headline, dek-to-chart, chart-to-footer) are step names in header.gaps.",
+      "label_mark": "s",
+      "value_name": "xs",
+      "leader_clear": "xs",
+      "axis_label": "m",
+      "row_label": "m",
+      "panel_x": "2xl",
+      "panel_y": "xl",
+      "column": "3xl",
+      "legend_item": "xl",
+      "section_min": "m"
+    },
+    "mark": {
+      "_note": "Mark geometry at k=1. bar_ratio: bar thickness as a share of its row or column slot (the rest is gap), at most bar_max. row_max: the tallest row a horizontal bar chart may have; past it the form turns to columns (bridge) rather than float bars in air. min_mark: the thinnest bar or step drawn, so a tiny value still shows. leader_min: shortest leader worth drawing. swarm_fill_lo/hi_ratio: the share of the room across the value axis a beeswarm aims to fill; swarm_gap_max_ratio: how far dot spacing may loosen (× diameter) to get there. column_ratio: column width as a share of its slot in a time series of columns (many slots, so the columns sit close).",
+      "bar_ratio": 0.55,
+      "column_ratio": 0.78,
+      "bar_max": 56,
+      "row_max": 100,
+      "min_mark": 4,
+      "corner": 0,
+      "cell_corner": 2,
+      "cell_gap": 3,
+      "dot": 5,
+      "dot_hero": 6,
+      "dot_small": 3.5,
+      "swarm_dot_max": 15,
+      "swarm_dot_min": 4,
+      "swarm_fill_lo_ratio": 0.62,
+      "swarm_fill_hi_ratio": 0.78,
+      "swarm_gap_max_ratio": 1.6,
+      "leader_min": 16,
+      "halo": 3,
+      "tile_max": 120,
+      "tile_gap": 8,
+      "tile_gap_min": 6,
+      "tile_corner": 8
+    },
+    "axis": {
+      "_note": "Ticks at least label_gap label-heights apart, between ticks_min and ticks_max of them, and they must cover the data: neither end of the data lies more than half a step beyond the outermost tick (stretch_max).",
+      "label_gap": 3,
+      "ticks_min": 2,
+      "ticks_max": 6,
+      "stretch_max": 0.5,
+      "y_cover": 1,
+      "_note_y_cover": "Value axes drawn as horizontal gridlines stretch up to a full step (y_cover 1), so the data never runs past the top or bottom gridline: the owner found a line poking above its top gridline odd (3 Nov 2026). Horizontal value axes (swarms, ranked dots, range bars) keep stretch_max, where a full step of padding is dead canvas. Data within touch (0.1) of a step past a gridline is left there: it reads as touching the line, and a whole extra step for it is dead canvas.",
+      "touch": 0.1
+    },
+    "devices": {
+      "_note": "Visual devices a note may name, and the SVG evidence that the chart draws them. A note that names a device the chart does not draw is a COPY error at render and a lint 'grammar' issue.",
+      "dashed": "[data-device~=dashed]",
+      "outline": "[data-device~=dashed]",
+      "hatched": "[data-device~=hatched]",
+      "shaded": "[data-device~=shaded]",
+      "shading": "[data-device~=shaded]"
+    },
+    "headline": {
+      "_note": "Plain headlines (render COPY check on every variant). One statement a reader gets in one pass: the finding, in the words a person would say it. Numbers and context go to the dek (the sub-heading). No front-loaded figures ('At +2.16°C, ...'), no 'Even ...', no two-part constructions joined by a colon or semicolon, no questions or exclamations.",
+      "max_words": 13,
+      "no_start": [
+        "At ",
+        "Even ",
+        "With ",
+        "As ",
+        "While ",
+        "Despite "
+      ],
+      "no_chars": [
+        ":",
+        ";",
+        "?",
+        "!",
+        "—"
+      ]
+    },
+    "no_break": {
+      "_note": "Names that never break across lines, in any frame text (headline, dek, box, notes, source). The frame swaps their spaces for no-break spaces before wrapping.",
+      "terms": [
+        "El Niño",
+        "La Niña",
+        "Nifty 50",
+        "Midcap 50",
+        "Bank Nifty",
+        "S&P 500",
+        "US dollar",
+        "Andhra Pradesh",
+        "Madhya Pradesh",
+        "Uttar Pradesh",
+        "West Bengal",
+        "Tamil Nadu",
+        "Jammu and Kashmir",
+        "Himachal Pradesh",
+        "Niño 3.4"
+      ]
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "_note": "Single source of design truth for both stacks. Palettes validated with the dataviz validator on surface #F6F1E9.",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "scale": 2
+  },
+  "margin": {
+    "top": 72,
+    "right": 72,
+    "bottom": 56,
+    "left": 72
+  },
+  "color": {
+    "surface": "#F6F1E9",
+    "ink": "#1E1B16",
+    "ink2": "#4A453D",
+    "muted": "#6F685D",
+    "grid": "#DDD5C7",
+    "axis": "#A79F92",
+    "accent": "#C2492F",
+    "categorical": [
+      "#C2492F",
+      "#D99A16",
+      "#2563A8",
+      "#2E8B68",
+      "#8A5BC0"
+    ],
+    "other": "#B3AA9C",
+    "nodata": "#E4DED3",
+    "diverging_cool": [
+      "#2B5C9C",
+      "#8DAED6"
+    ],
+    "diverging_warm": [
+      "#D9A07A",
+      "#C46E47",
+      "#A2432A",
+      "#6B2214"
+    ],
+    "text_accent": "#C2492F",
+    "label": "#4A453D",
+    "leader": "#1E1B16",
+    "ridge_shade": "#E5B8A0",
+    "ridge_highlight": "#C2492F"
+  },
+  "font": {
+    "serif": "Source Serif 4",
+    "sans": "Libre Franklin"
+  },
+  "type": {
+    "kicker": {
+      "family": "sans",
+      "size": 22,
+      "weight": 700,
+      "tracking": 0.08
+    },
+    "headline": {
+      "family": "serif",
+      "size": 54,
+      "weight": 600,
+      "leading": 1.12
+    },
+    "dek": {
+      "family": "sans",
+      "size": 27,
+      "weight": 400,
+      "leading": 1.38
+    },
+    "label": {
+      "family": "sans",
+      "size": 23,
+      "weight": 500
+    },
+    "label_strong": {
+      "family": "sans",
+      "size": 23,
+      "weight": 700
+    },
+    "axis": {
+      "family": "sans",
+      "size": 21,
+      "weight": 400
+    },
+    "note": {
+      "family": "sans",
+      "size": 20,
+      "weight": 400,
+      "leading": 1.35
+    },
+    "brand": {
+      "family": "sans",
+      "size": 21,
+      "weight": 700
+    }
+  },
+  "rules": {
+    "min_font_px": 20,
+    "safe_inset_px": 48,
+    "stroke_line": 3,
+    "stroke_grid": 1.5,
+    "bar_gap_px": 2
+  },
+  "brand": "Markets by Zerodha",
+  "name": "editorial",
+  "fonts": [
+    {
+      "family": "Source Serif 4",
+      "weight": 400,
+      "file": "editorial/SourceSerif4-400.ttf"
+    },
+    {
+      "family": "Source Serif 4",
+      "weight": 600,
+      "file": "editorial/SourceSerif4-600.ttf"
+    },
+    {
+      "family": "Source Serif 4",
+      "weight": 700,
+      "file": "editorial/SourceSerif4-700.ttf"
+    },
+    {
+      "family": "Libre Franklin",
+      "weight": 400,
+      "file": "editorial/LibreFranklin-400.ttf"
+    },
+    {
+      "family": "Libre Franklin",
+      "weight": 500,
+      "file": "editorial/LibreFranklin-500.ttf"
+    },
+    {
+      "family": "Libre Franklin",
+      "weight": 600,
+      "file": "editorial/LibreFranklin-600.ttf"
+    },
+    {
+      "family": "Libre Franklin",
+      "weight": 700,
+      "file": "editorial/LibreFranklin-700.ttf"
+    }
+  ],
+  "leader_dash": null,
+  "logo": null,
+  "hatch_nodata": true
+}

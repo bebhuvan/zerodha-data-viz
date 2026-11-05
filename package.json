@@ -1,0 +1,13 @@
+{
+  "name": "zerodha-charts",
+  "private": true,
+  "description": "Editorial chart system for Zerodha: data, templates, visual grammar and QA",
+  "scripts": {
+    "setup": "cd pipeline/render && npm install",
+    "fetch": "python3 -I pipeline/fetch/fetch_all.py && python3 -I pipeline/fetch/fetch_markets.py",
+    "build": "python3 -I pipeline/fetch/build_tidy.py",
+    "make": "node pipeline/make.mjs",
+    "all": "node pipeline/make.mjs --all",
+    "test": "node pipeline/make.mjs --test"
+  }
+}

@@ -1,0 +1,9 @@
+# Private: the Zerodha brand guide is not for public distribution. The theme carries what charts need.
+pipeline/design/brand/*.pdf
+# Dependencies and regenerated debug output
+node_modules/
+pipeline/qa/reports/
+# Local
+.DS_Store
+*.pyc
+__pycache__/

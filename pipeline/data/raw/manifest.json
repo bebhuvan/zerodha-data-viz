@@ -1,0 +1,402 @@
+[
+  {
+    "file": "mospi_cpi_allindia_combined_2013_2025.json",
+    "url": "https://api.mospi.gov.in/api/cpi/getCPIIndex?base_year=2012&year={2013..2025}&month_code={1..12}&state_code=99&sector_code=3&Format=JSON",
+    "fetched_at": "2026-10-27T10:10:49+00:00",
+    "sha256": "647405cd3faf0935d6bf4bce611cd3f73e8aa3d2e7a48949e81960ebeb863557",
+    "bytes": 950113,
+    "note": "MOSPI CPI base 2012, All India, Combined sector, all groups/subgroups"
+  },
+  {
+    "file": "mospi_cpi_states_combined_dec2024_dec2025.json",
+    "url": "https://api.mospi.gov.in/api/cpi/getCPIIndex?base_year=2012&year={2024,2025}&month_code=12&state_code={1..39}&sector_code=3&Format=JSON",
+    "fetched_at": "2026-10-27T10:11:17+00:00",
+    "sha256": "5f6427f161d578e34a2f847aac2bbe382483c484b526926577aeefa9c78116f8",
+    "bytes": 303755,
+    "note": "MOSPI CPI base 2012, each state, Combined, December of 2024 and 2025"
+  },
+  {
+    "file": "noaa_oni.txt",
+    "url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+    "fetched_at": "2026-10-27T10:11:38+00:00",
+    "sha256": "5d6fa3a2f857d916550d39c2c686e94cb942430195c82518e6a5d0f5ffbd0665",
+    "bytes": 23025,
+    "note": "NOAA CPC ONI, ERSSTv5, 1991-2020 climatology"
+  },
+  {
+    "file": "india_states.geojson",
+    "url": "https://raw.githubusercontent.com/udit-001/india-maps-data/main/geojson/india.geojson",
+    "fetched_at": "2026-10-27T10:11:39+00:00",
+    "sha256": "e724c14bc5ee68bcdd6cee8c89222b80cb61e180e55c1dab3d067f09b3b9dc8f",
+    "bytes": 4089052,
+    "note": "State boundaries, udit-001/india-maps-data (check compliance before publishing)"
+  },
+  {
+    "file": "yahoo_gcf_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=0&period2=1793686708&interval=1mo",
+    "fetched_at": "2026-11-03T06:18:34+00:00",
+    "sha256": "873dde102ef257a38dab3a9cec8a4a3ce4274a5be34473cf51a12250b6aa64c6",
+    "bytes": 26009,
+    "note": "COMEX gold futures, front month, USD per troy ounce, monthly"
+  },
+  {
+    "file": "yahoo_nsei_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENSEI?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:02+00:00",
+    "sha256": "3ee1ad144aec781eb64f9b54ae5dd77b742f08a78df7ee2de1a29f8b7e2ad3d7",
+    "bytes": 21910,
+    "note": "Nifty 50, monthly, price index (no dividends)"
+  },
+  {
+    "file": "yahoo_nsei_1d.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENSEI?period1=0&period2=1793686921&interval=1d",
+    "fetched_at": "2026-11-03T06:22:02+00:00",
+    "sha256": "6cc8cdbcfe1ec6589aa85151e3a8dfbafb901ca5d9bca9eda839e536948ac6f0",
+    "bytes": 421068,
+    "note": "Nifty 50, daily, price index (no dividends)"
+  },
+  {
+    "file": "yahoo_bsesn_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EBSESN?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:03+00:00",
+    "sha256": "507ab2693527bc3f7648a1a393c98092dc213a32516e0deeee7a65c136bbc860",
+    "bytes": 33842,
+    "note": "S&P BSE Sensex, monthly, price index (no dividends)"
+  },
+  {
+    "file": "yahoo_nsemdcp50_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENSEMDCP50?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:03+00:00",
+    "sha256": "dd2680ab8338bda9814bf7d42d692ecd8cb11c3f915cbca7170fb51219113134",
+    "bytes": 22547,
+    "note": "Nifty Midcap 50, monthly, price index (no dividends)"
+  },
+  {
+    "file": "yahoo_nsebank_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5ENSEBANK?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:03+00:00",
+    "sha256": "d0040ee355aaf9f72b51bf4e97b02144bc6eb3b206a09f9ca8a7e3c230b1eef0",
+    "bytes": 21578,
+    "note": "Nifty Bank, monthly, price index (no dividends)"
+  },
+  {
+    "file": "yahoo_gcf_1d.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/GC%3DF?period1=0&period2=1793686921&interval=1d",
+    "fetched_at": "2026-11-03T06:22:04+00:00",
+    "sha256": "ec65b6724bde4c1e880e654c1222569cea586f189a557141ec417ca5cc289db5",
+    "bytes": 606057,
+    "note": "COMEX gold futures, front month, USD per troy ounce, daily"
+  },
+  {
+    "file": "yahoo_inrx_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/INR%3DX?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:04+00:00",
+    "sha256": "b244097110dd9b118d92ed632b706197a9c92e6e7dca36f9cf132d088350171c",
+    "bytes": 29246,
+    "note": "USD/INR, rupees per dollar, monthly"
+  },
+  {
+    "file": "yahoo_gspc_1mo.json",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/%5EGSPC?period1=0&period2=1793686921&interval=1mo",
+    "fetched_at": "2026-11-03T06:22:04+00:00",
+    "sha256": "fd5f8524811ed0a71a5da1fae1769a50e0b34eeab8740ec02dab7f82411f849d",
+    "bytes": 56278,
+    "note": "S&P 500, monthly, price index (no dividends), USD"
+  },
+  {
+    "file": "fred_dgs1mo.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS1MO",
+    "fetched_at": "2026-11-03T06:22:05+00:00",
+    "sha256": "544737604dcbe229b78d0ed274db292539b035c33fc71375fac7bec0ac355745",
+    "bytes": 104352,
+    "note": "US Treasury constant-maturity yield, 1MO, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs3mo.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3MO",
+    "fetched_at": "2026-11-03T06:22:05+00:00",
+    "sha256": "740ab76a61c2923c9a26f36d39bf2eadb60f070338b5377951086348852640c5",
+    "bytes": 186975,
+    "note": "US Treasury constant-maturity yield, 3MO, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs6mo.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS6MO",
+    "fetched_at": "2026-11-03T06:22:06+00:00",
+    "sha256": "fbbb722c2ae15266ff21e484a10563281b13b520b5a27ca78ee9af0b0f46e743",
+    "bytes": 187031,
+    "note": "US Treasury constant-maturity yield, 6MO, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs1.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS1",
+    "fetched_at": "2026-11-03T06:22:06+00:00",
+    "sha256": "3d17ef621da2080186a7ac056768d7b96e77951622b4364eac5a184eb9078f12",
+    "bytes": 268873,
+    "note": "US Treasury constant-maturity yield, 1, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs2.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2",
+    "fetched_at": "2026-11-03T06:22:07+00:00",
+    "sha256": "d500ba7d67e02ba90b67eed73f21075eae33b2cff5cb2770c0bde1825b306fff",
+    "bytes": 209424,
+    "note": "US Treasury constant-maturity yield, 2, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs3.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS3",
+    "fetched_at": "2026-11-03T06:22:07+00:00",
+    "sha256": "c18042e8b6b3ee5f8431d0302fa388cfebda5ce47a54f01ba7e99f34d3ea73dc",
+    "bytes": 268972,
+    "note": "US Treasury constant-maturity yield, 3, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs5.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS5",
+    "fetched_at": "2026-11-03T06:22:07+00:00",
+    "sha256": "f66261e70104056656ca40a5954af2c491c4219860b1879fc0ba5e650f3d04bb",
+    "bytes": 269077,
+    "note": "US Treasury constant-maturity yield, 5, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs7.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS7",
+    "fetched_at": "2026-11-03T06:22:08+00:00",
+    "sha256": "b2c19f748866ff5d66be4823cd0de1c476b73eab6e58d9682f9daa30039370bc",
+    "bytes": 238271,
+    "note": "US Treasury constant-maturity yield, 7, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs10.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+    "fetched_at": "2026-11-03T06:22:08+00:00",
+    "sha256": "548c7978740bf6c50df3026343d817121fce046e8685bfa1883769c606b443cf",
+    "bytes": 269251,
+    "note": "US Treasury constant-maturity yield, 10, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs20.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS20",
+    "fetched_at": "2026-11-03T06:22:09+00:00",
+    "sha256": "2a6a1ee2dc56fc593900a532c0ca4ba9ae2e2545ec95ae58006e98fe33fabed3",
+    "bytes": 262520,
+    "note": "US Treasury constant-maturity yield, 20, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dgs30.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS30",
+    "fetched_at": "2026-11-03T06:22:09+00:00",
+    "sha256": "3cf5289880a499ac5fada394ec24745955a43f135fcae3d8e4e0ab326ebca3f2",
+    "bytes": 206845,
+    "note": "US Treasury constant-maturity yield, 30, % a year, daily (Board of Governors, H.15)"
+  },
+  {
+    "file": "fred_dexinus.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DEXINUS",
+    "fetched_at": "2026-11-03T06:22:09+00:00",
+    "sha256": "92cf1549cd82aa673884f57042a116ba349e658007fee9e8bc875798f80cbeee",
+    "bytes": 260410,
+    "note": "Indian rupees per US dollar, noon buying rates in New York, daily (Board of Governors, H.10)"
+  },
+  {
+    "file": "fred_indirltlt01stm.csv",
+    "url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=INDIRLTLT01STM",
+    "fetched_at": "2026-11-03T06:22:09+00:00",
+    "sha256": "5e5b047ce3990b4fd79dddfe218c9c982ea2bf6f2fc71e12274d29d8cabbefbe",
+    "bytes": 5016,
+    "note": "India long-term (10-year) government bond yield, % a year, monthly (OECD MEI)"
+  },
+  {
+    "file": "wb_all_ny_gdp_mktp_cd.json",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?format=json&per_page=20000&date=2000:2025",
+    "fetched_at": "2026-11-03T06:22:10+00:00",
+    "sha256": "b43c7e1680dca756f62e543766e5e8fa22749e845456dedd31490c32d9eb36cf",
+    "bytes": 1464011,
+    "note": "GDP, current US$, every economy and aggregate, World Bank WDI"
+  },
+  {
+    "file": "wb_ind_ny_gdp_mktp_kd_zg.json",
+    "url": "https://api.worldbank.org/v2/country/IND/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=1961:2025",
+    "fetched_at": "2026-11-03T06:22:10+00:00",
+    "sha256": "62516c7954a9650fa13cc65c3b51ba912c0f0f92f1897f2827eb448c47dbf41e",
+    "bytes": 13874,
+    "note": "India real GDP growth, annual %, World Bank WDI"
+  },
+  {
+    "file": "wb_ind_fp_cpi_totl_zg.json",
+    "url": "https://api.worldbank.org/v2/country/IND/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=1961:2025",
+    "fetched_at": "2026-11-03T06:22:10+00:00",
+    "sha256": "6ab6e44fa2f3f067d72b1e9311c9973e843bad16dea2d05de9d3b4340c68367e",
+    "bytes": 14717,
+    "note": "India consumer price inflation, annual %, World Bank WDI"
+  },
+  {
+    "file": "wb_all_ny_gdp_mktp_kd_zg.json",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.KD.ZG?format=json&per_page=20000&date=2015:2025",
+    "fetched_at": "2026-11-03T06:22:10+00:00",
+    "sha256": "0da87592c05ea87a2b77f2baed371d7d941fa09a6d6e57fd07e82eb63a01bef1",
+    "bytes": 641575,
+    "note": "Real GDP growth, annual %, every economy, World Bank WDI"
+  },
+  {
+    "file": "wb_all_fp_cpi_totl_zg.json",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/FP.CPI.TOTL.ZG?format=json&per_page=20000&date=2015:2025",
+    "fetched_at": "2026-11-03T06:22:11+00:00",
+    "sha256": "c497783ed58220dd77d9eea3bb41ddd38630e43df236dbe902aa0cd20915befd",
+    "bytes": 676288,
+    "note": "Consumer price inflation, annual %, every economy, World Bank WDI"
+  },
+  {
+    "file": "wb_all_ny_gdp_pcap_cd.json",
+    "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.PCAP.CD?format=json&per_page=20000&date=2015:2025",
+    "fetched_at": "2026-11-03T06:22:11+00:00",
+    "sha256": "b44b0d8d8752c6c8a5626d3aeec0951d5ce81adb5bfecc7534965152096c82e3",
+    "bytes": 652675,
+    "note": "GDP per person, current US$, every economy, World Bank WDI"
+  },
+  {
+    "file": "wb_countries.json",
+    "url": "https://api.worldbank.org/v2/country?format=json&per_page=400",
+    "fetched_at": "2026-11-03T06:22:11+00:00",
+    "sha256": "c9acf3932785191a649cbc04c3056af4cf64a236e5c3b49d49be25ddb0440bce",
+    "bytes": 113954,
+    "note": "World Bank country list with region and income group (aggregates flagged)"
+  },
+  {
+    "file": "owid_era5_enso_world.csv",
+    "url": "https://ourworldindata.org/grapher/global-temperature-anomalies-by-el-nino-la-nina.csv?v=1&csvType=filtered&useColumnShortNames=true&country=~OWID_WRL",
+    "fetched_at": "2026-11-03T09:53:34+00:00",
+    "sha256": "62e0d29faedabd72e6ad3dcb50171db9911557f73d76958ab9d7d9b562047427",
+    "bytes": 36697,
+    "note": "World monthly surface temperature anomaly, degC vs 1991-2020 (Copernicus ERA5 via OWID) with NOAA ONI for the month"
+  },
+  {
+    "file": "owid_era5_enso_world.metadata.json",
+    "url": "https://ourworldindata.org/grapher/global-temperature-anomalies-by-el-nino-la-nina.metadata.json?v=1&csvType=filtered&useColumnShortNames=true&country=~OWID_WRL",
+    "fetched_at": "2026-11-03T09:53:38+00:00",
+    "sha256": "dfb6e840ef3de75bc7b2e1abf2d3c7f462695225340021e0ded416ecafa817e0",
+    "bytes": 6565,
+    "note": "OWID metadata for the series above: sources, processing, update dates"
+  },
+  {
+    "file": "era5_sst_nino34_1950_2025.nc",
+    "url": "cds://reanalysis-era5-single-levels-monthly-means {\"product_type\": [\"monthly_averaged_reanalysis\"], \"variable\": [\"sea_surface_temperature\"], \"year\": [\"1950\", \"1951\", \"1952\", \"1953\", \"1954\", \"1955\", \"1956\", \"1957\", \"1958\", \"1959\", \"1960\", \"1961\", \"1962\", \"1963\", \"1964\", \"1965\", \"1966\", \"1967\", \"1968\", \"1969\", \"1970\", \"1971\", \"1972\", \"1973\", \"1974\", \"1975\", \"1976\", \"1977\", \"1978\", \"1979\", \"1980\", \"1981\", \"1982\", \"1983\", \"1984\", \"1985\", \"1986\", \"1987\", \"1988\", \"1989\", \"1990\", \"1991\", \"1992\", \"1993\", \"1994\", \"1995\", \"1996\", \"1997\", \"1998\", \"1999\", \"2000\", \"2001\", \"2002\", \"2003\", \"2004\", \"2005\", \"2006\", \"2007\", \"2008\", \"2009\", \"2010\", \"2011\", \"2012\", \"2013\", \"2014\", \"2015\", \"2016\", \"2017\", \"2018\", \"2019\", \"2020\", \"2021\", \"2022\", \"2023\", \"2024\", \"2025\"], \"month\": [\"01\", \"02\", \"03\", \"04\", \"05\", \"06\", \"07\", \"08\", \"09\", \"10\", \"11\", \"12\"], \"time\": [\"00:00\"], \"area\": [5, -170, -5, -120], \"data_format\": \"netcdf\", \"download_format\": \"unarchived\"}",
+    "fetched_at": "2026-11-04T08:58:10+00:00",
+    "sha256": "46e5bd5d95cca5f6df4246dff96da60efd1e1f0b1841d2bff80a047ad883868f",
+    "bytes": 11726788,
+    "note": "ERA5 monthly mean SST, Nino 3.4 box, 1950-2025 (Copernicus C3S)"
+  },
+  {
+    "file": "era5_sst_nino34_2026.nc",
+    "url": "cds://reanalysis-era5-single-levels-monthly-means {\"product_type\": [\"monthly_averaged_reanalysis\"], \"variable\": [\"sea_surface_temperature\"], \"year\": [\"2026\"], \"month\": [\"01\", \"02\", \"03\", \"04\", \"05\", \"06\", \"07\", \"08\", \"09\", \"10\"], \"time\": [\"00:00\"], \"area\": [5, -170, -5, -120], \"data_format\": \"netcdf\", \"download_format\": \"unarchived\"}",
+    "fetched_at": "2026-11-04T08:59:31+00:00",
+    "sha256": "fd00c82137a3fe71aa5c71606c53a918194444c7ff94c3597e64eb6c05ff614e",
+    "bytes": 128748,
+    "note": "ERA5 monthly mean SST, Nino 3.4 box, 2026 January to month 10 (ERA5T, provisional)"
+  },
+  {
+    "file": "pip_ind_3_surveys.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=3&version=20260922_2021_01_02_PROD&fill_gaps=false&format=csv",
+    "fetched_at": "2026-11-05T05:17:30+00:00",
+    "sha256": "9a3a8969b9449d782fd4e21b72482c50ddad5cd4b148a012554182c72f7cfedd",
+    "bytes": 4999,
+    "note": "India poverty headcount at $3.00 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, survey years only"
+  },
+  {
+    "file": "pip_ind_3_lineup.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=3&version=20260922_2021_01_02_PROD&fill_gaps=true&format=csv",
+    "fetched_at": "2026-11-05T05:17:33+00:00",
+    "sha256": "335520de6e010ed4e71e303abddfb1204fc8f39d1dcf13d68b10be63bc1dd167",
+    "bytes": 12851,
+    "note": "India poverty headcount at $3.00 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, lineup years incl. interpolated and extrapolated"
+  },
+  {
+    "file": "pip_ind_42_surveys.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=4.2&version=20260922_2021_01_02_PROD&fill_gaps=false&format=csv",
+    "fetched_at": "2026-11-05T05:17:33+00:00",
+    "sha256": "d3934eed6cf442879370f39983e55cdfaf0aab6adb40fcd0b76e1ff0817ae28a",
+    "bytes": 5024,
+    "note": "India poverty headcount at $4.20 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, survey years only"
+  },
+  {
+    "file": "pip_ind_42_lineup.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=4.2&version=20260922_2021_01_02_PROD&fill_gaps=true&format=csv",
+    "fetched_at": "2026-11-05T05:17:35+00:00",
+    "sha256": "382d5430b5ff2cbdffcc1b4f66abbd4ba98691c74269bd3fe825902df7dbfb23",
+    "bytes": 12953,
+    "note": "India poverty headcount at $4.20 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, lineup years incl. interpolated and extrapolated"
+  },
+  {
+    "file": "pip_ind_83_surveys.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=8.3&version=20260922_2021_01_02_PROD&fill_gaps=false&format=csv",
+    "fetched_at": "2026-11-05T05:17:35+00:00",
+    "sha256": "fd8bb20e67df373d5d68cb55141eae2e72521616e55766d680086cc28c38e0dc",
+    "bytes": 5015,
+    "note": "India poverty headcount at $8.30 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, survey years only"
+  },
+  {
+    "file": "pip_ind_83_lineup.csv",
+    "url": "https://api.worldbank.org/pip/v1/pip?country=IND&year=all&povline=8.3&version=20260922_2021_01_02_PROD&fill_gaps=true&format=csv",
+    "fetched_at": "2026-11-05T05:17:37+00:00",
+    "sha256": "8041e2d4fb3adcbbcff12bb9ef3d3f39c423427a45fd7cec06016d7dce1740ac",
+    "bytes": 12944,
+    "note": "India poverty headcount at $8.30 a day (2021 PPP), PIP 20260922_2021_01_02_PROD, lineup years incl. interpolated and extrapolated"
+  },
+  {
+    "file": "niftyindices_nifty50_daily.csv",
+    "url": "https://www.niftyindices.com/Backpage.aspx/getHistoricaldatatabletoString (NIFTY 50, 1990-07-03 to 2026-11-04)",
+    "fetched_at": "2026-11-05T06:03:08+00:00",
+    "sha256": "b80a9e3a133433654de7a382a08c6fd55513c14f63e102ccaf7660d9094284bd",
+    "bytes": 164451,
+    "note": "Nifty 50 daily close, price index (no dividends), 1990-07-03 to 2026-11-04, NSE Indices via Data bank"
+  },
+  {
+    "file": "idh_growth_revenue.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Growth_Revenue.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "dd94cecc40c35738dc83ef16426d51f8dc5c96c1964a53cb4587678869a97797",
+    "bytes": 6356,
+    "note": "IndiaDataHub, all BSE-listed companies, GROWTH tab, Revenue, YoY %, Jun-2023 to Sep-2026"
+  },
+  {
+    "file": "idh_growth_ebitda.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Growth_EBITDA.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "112007871fd947d1d695d30ea69208c016b29799b53e99a00f59839fb04b6526",
+    "bytes": 6523,
+    "note": "IndiaDataHub, all BSE-listed companies, GROWTH tab, EBITDA, YoY %, Jun-2023 to Sep-2026"
+  },
+  {
+    "file": "idh_growth_pat.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Growth_PAT.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "3fbbb870f31e07b07615954b4823e4cfc94c9ac021b9fbb07d12664e20980446",
+    "bytes": 6741,
+    "note": "IndiaDataHub, all BSE-listed companies, GROWTH tab, PAT, YoY %, Jun-2023 to Sep-2026"
+  },
+  {
+    "file": "idh_agg_revenue.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Aggregates_Total_Revenue.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "d1a366d7b244b89b50a692a8cb9804072f110766bc070f6611371f5874f1ff53",
+    "bytes": 7973,
+    "note": "IndiaDataHub, all BSE-listed companies, AGGREGATES tab, Total Revenue, Rs bn, Jun-2023 to Sep-2026"
+  },
+  {
+    "file": "idh_agg_ebitda.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Aggregates_EBITDA.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "369490d9a5585f291daa8342b709f0c77bd595042e59a0986afa60831f7990d3",
+    "bytes": 7070,
+    "note": "IndiaDataHub, all BSE-listed companies, AGGREGATES tab, EBITDA, Rs bn, Jun-2023 to Sep-2026"
+  },
+  {
+    "file": "idh_agg_pat.csv",
+    "url": "https://indiadatahub.com (Sector Insights: Quarterly Performance of Listed Companies); manual download as Aggregates_PAT.csv",
+    "fetched_at": "2026-11-05",
+    "sha256": "62cce78004e856fd610e82dfb28dba3e79b4b8961217d6218fb043ebe7694c1c",
+    "bytes": 6907,
+    "note": "IndiaDataHub, all BSE-listed companies, AGGREGATES tab, PAT, Rs bn, Jun-2023 to Sep-2026"
+  }
+]
